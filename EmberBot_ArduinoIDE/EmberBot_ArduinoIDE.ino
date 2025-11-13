@@ -158,7 +158,6 @@ void moveServoSmooth(int targetX_us_in, int targetY_us_in) {
   xaxis.writeMicroseconds(stepX);
   yaxis.writeMicroseconds(stepY);
   //delay(max(STEP_DELAY_MS_X, STEP_DELAY_MS_Y));
-  delay(STEP_DELAY_MS_Y);
   }
 
   // Settle back to true final target
