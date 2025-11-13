@@ -1,0 +1,16 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPathWin": "C:\\Users\\jc604\\esp\\v5.4\\esp-idf",
+    "idf.pythonInstallPath": "C:\\Users\\jc604\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+    "idf.openOcdConfigs": [
+        "board/esp32-wrover-kit-3.3v.cfg"
+    ],
+    "idf.portWin": "COM8",
+    "idf.toolsPathWin": "C:\\Users\\jc604\\.espressif",
+    "files.associations": {
+        "esp_chip_info.h": "c",
+        "freertos.h": "c",
+        "task.h": "c"
+    },
+    "idf.flashType": "UART"
+}
