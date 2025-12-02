@@ -405,7 +405,7 @@ void loop() {
 
   bool TargetAnalysisText = false;
   if (TargetAnalysisText){
-  Serial.printf("Target: (%d,%d)  =>  X=%dµs  Y=%dµs\n", nozzleX, nozzleY, x_us, y_us);
+    Serial.printf("Target: (%d,%d)  =>  X=%dµs  Y=%dµs\n", nozzleX, nozzleY, x_us, y_us);
   }
 
   
@@ -422,6 +422,7 @@ void loop() {
   } else {
     digitalWrite(pumpPin, LOW);
   }
+
   bool temp_text = false;
   if (temp_text) {
     Serial.println("KY-026 Flame Detection:");
@@ -469,8 +470,8 @@ void loop() {
     }
   }
 
-  bool displaycurrentcords = false;
   // Print coordinates every 1000ms
+  bool displaycurrentcords = false;
   if (millis() - lastPrint >= 1000 && displaycurrentcords) {
     lastPrint = millis();
     Serial.printf("Current coords: leftMotor=%d, rightMotor = %d, NozzleX=%d, NozzleY=%d\n", leftMotor, rightMotor, nozzleX, nozzleY);
